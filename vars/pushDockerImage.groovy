@@ -11,7 +11,7 @@ def call(String imageName){
 =======
     withCredentials([(usernamePassword(credentialsId:'docker-hub-repo', passwordVariable:'password', usernameVariable:'username')]){
         sh 'echo $password | docker login -u $username --password-stdin'
-        sh 'docker push $imageName'
+        sh "docker push $imageName"
 >>>>>>> 0454e11 (passing imageName as parameter)
     }
 }
