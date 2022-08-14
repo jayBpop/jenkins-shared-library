@@ -1,5 +1,6 @@
-#!/bin/sh/groovy
-
-echo "Building jar through maven!"
-sh ' mvn clean '
-sh ' mvn install'
+#!usr/bin/env groovy
+def call(){
+    echo "Building jar through maven!"
+    sh ' mvn clean '
+    sh ' mvn install'
+}
