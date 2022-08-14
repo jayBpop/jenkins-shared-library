@@ -6,6 +6,6 @@ def call(){
 
    {
         sh 'echo $password | docker login -u $username --password-stdin'
-        sh 'docker push hdevop/myrepo: jsl_java_app-1.0'
+        sh 'docker push hdevop/myrepo:jsl_java_app-1.0'
     }
 }
